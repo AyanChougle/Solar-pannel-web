@@ -459,6 +459,27 @@ h3 {
   box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.06);
 }
 
+/* ML tooltip */
+.ml-tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: rgba(17,24,39,0.95);
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.16);
+  transform: translate(-50%, -120%);
+  white-space: nowrap;
+  z-index: 2500;
+}
+
+/* ML legend (interactive) */
+.ml-legend { display:flex; gap:10px; align-items:center; }
+.ml-legend-item { display:flex; gap:8px; align-items:center; padding:6px 8px; border-radius:8px; background:#fff; border:1px solid var(--border); cursor:pointer; font-weight:700; font-size:13px; }
+.ml-legend-dot { width:12px; height:8px; border-radius:3px; display:inline-block; }
+.ml-legend-item.hidden { opacity:0.45; }
+
 .info-item,
 .menu-item {
   display: flex;
